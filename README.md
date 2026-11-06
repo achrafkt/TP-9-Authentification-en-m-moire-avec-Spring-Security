@@ -95,6 +95,14 @@ Vérification manuelle sur l'application lancée :
 
 ![Admin connecté](captures/03-accueil-admin-connecte.png)
 
+**Espace Administrateur – accessible avec `admin`**
+
+![Espace administrateur](captures/05-espace-administrateur.png)
+
+**Déconnexion – retour sur la page de connexion personnalisée**
+
+![Déconnexion](captures/04-deconnexion.png)
+
 **CSRF** : la protection CSRF reste activée. `th:action="@{...}"` injecte automatiquement
 le champ caché `_csrf` dans les formulaires de connexion et de déconnexion. Pour cette raison,
 la déconnexion se fait par un formulaire `POST /logout` et non par un simple lien.
