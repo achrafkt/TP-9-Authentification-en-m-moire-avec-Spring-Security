@@ -11,8 +11,8 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @Configuration
 public class UserDetailsConfig {
 
-    // Étape 7 : les mots de passe sont encodés avec BCrypt
-    // (remplace la version {noop} de l'étape 6).
+    // 内存用户服务：创建 user（USER 角色）和 admin（ADMIN、USER 角色）
+    // 第 7 步：密码使用 BCrypt 加密（替代第 6 步的 {noop} 明文版本）
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
         UserDetails user = User.withUsername("user")
