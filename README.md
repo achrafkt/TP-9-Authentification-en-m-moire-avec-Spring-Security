@@ -91,6 +91,10 @@ Vérification manuelle sur l'application lancée :
 
 ![Espace utilisateur](captures/02-espace-utilisateur.png)
 
+**Accès refusé (HTTP 403) – `user` tente d'ouvrir `/admin/dashboard`**
+
+![Accès refusé 403](captures/06-acces-refuse-403.png)
+
 **Accueil – connecté avec `admin` / `1234` (rôles ADMIN et USER)**
 
 ![Admin connecté](captures/03-accueil-admin-connecte.png)
