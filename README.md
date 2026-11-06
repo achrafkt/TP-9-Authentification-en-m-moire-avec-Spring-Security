@@ -81,6 +81,20 @@ Vérification manuelle sur l'application lancée :
 | Login avec mauvais mot de passe          | 302 → `/login?error`               |
 | Login `admin` / `1234`                   | 302, accès 200 aux deux espaces    |
 
+### Captures d'écran
+
+**Page d'accueil publique (anonyme)**
+
+![Accueil](captures/01-accueil.png)
+
+**Espace Utilisateur – connecté avec `user` / `1111`**
+
+![Espace utilisateur](captures/02-espace-utilisateur.png)
+
+**Accueil – connecté avec `admin` / `1234` (rôles ADMIN et USER)**
+
+![Admin connecté](captures/03-accueil-admin-connecte.png)
+
 **CSRF** : la protection CSRF reste activée. `th:action="@{...}"` injecte automatiquement
 le champ caché `_csrf` dans les formulaires de connexion et de déconnexion. Pour cette raison,
 la déconnexion se fait par un formulaire `POST /logout` et non par un simple lien.
